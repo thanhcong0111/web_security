@@ -20,7 +20,7 @@ SQL injection attacks have been used in many high-profile data breaches over the
 
 When the user selects the Gifts section, the query will be:
 
-### SELECT* FROM products WHERE category='Gifts' AND released=1
+`SELECT* FROM products WHERE category='Gifts' AND released=1`
 
 Implement insert 'or 1=1 -- then the question will be
 
