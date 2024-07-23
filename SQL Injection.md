@@ -1,4 +1,8 @@
-![image-20230913105748945](../../../_static/images/image-20230913105748945.png)
+# Labs
+
+If you're familiar with the basic concepts behind SQLi vulnerabilities and want to practice exploiting them on some realistic, deliberately vulnerable targets, you can access labs in this topic from the link below.
+
+- [View all SQL injection labs](https://portswigger.net/web-security/all-labs#sql-injection)
 
 # What is SQL injection (SQLi) ?
 SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. This can allow an attacker to view data that they are not normally able to retrieve. This might include data that belongs to other users, or any other data that the application can access. In many cases, an attacker can modify or delete this data, causing persistent changes to the application's content or behavior.
