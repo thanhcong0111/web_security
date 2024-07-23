@@ -117,6 +117,32 @@ Last, insert `'UNION SELECT password FROM users WHERE username =
 
 ## 10. Blind SQL injection with conditional responses
 
-Validate if the "users" table exists by inserting `and (SELECT 'x' FROM users LIMIT1)='x'--`. The result will return that users table doesn't exist.
+Validate if the "users" table exists by inserting:
+
+`and (SELECT 'x' FROM users LIMIT1)='x'--`
+
+The result will return that users table doesn't exist.
+
+Authenticating the administrator username does not exist in the users table by inserting:
+
+`and (SELECT username FROM users WHERE username='administrator')='administrator'--`
+
+And this will return that the administrator user exist.
+
+Next, we will redict the password length of the administrator user by adding `length(password) > 1` and `length(password) > 50`. 
+
+`and (SELECT username FROM users WHERE username='administrator' and length(password) > 1)='administrator'--`
+
+`and (SELECT username FROM users WHERE username='administrator' and length(password) > 50)='administrator'--`
+
+The length of the password is between [1;50] characters. To find more quickly, we use sniper. Wait a minute and we can find the right length.
+
+After have the true length, we will predict the first character of the password by inserting:
+
+`and (SELECT substring(password, 1, 1) from users WHERE username='adminitrator')='a'--`
+
+If it is not the right, we use Brute Force method and can find the result.
+
+To find other characters of the password, we set up two payloads, with payload 1 indicating the location of the password and payload 2 representing the character that is held at that position. Then proceed to launch the attack. 
 
 
