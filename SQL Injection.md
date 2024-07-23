@@ -29,3 +29,7 @@ Implement insert `'or 1=1 --` then the question will be
 Then, `SELECT` will select all the information from products table.
 
 ## 2. SQL injection vulnerability allowing login bypass
+
+When inserted into `administrator' or 1=1--` then when querying
+`WHERE username = administrator' or 1=1-- 
+will return a result of `TRUE`, so you can log in with a username of administrator.
