@@ -115,5 +115,8 @@ INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'users'--` to determine the column
 Last, insert `'UNION SELECT password FROM users WHERE username = 
 'administrator'--` to retrieve the administrator's information.
 
+## 10. Blind SQL injection with conditional responses
+
+Validate if the "users" table exists by inserting `and (SELECT 'x' FROM users LIMIT1)='x'--`. The result will return that users table doesn't exist.
 
 
