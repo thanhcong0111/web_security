@@ -33,3 +33,17 @@ Then, `SELECT` will select all the information from products table.
 When inserted into `administrator' or 1=1--` then when querying
 `WHERE username = administrator' or 1=1-- 
 will return a result of `TRUE`, so you can log in with a username of administrator.
+
+## 3. SQL injection attack, querying the database type and version on Oracle
+
+Use the query `'UNION SELECT 'abc' FROM DUAL`, which in turn increments the columns `SELECT` is needed to determine the number of columns that return the data of the preceding query. Because 
+`UNION` only returns when both queries have the same number of columns and the dual table is an existing table 
+in Oracle.
+
+Continue querying the version by inserting `'UNION SELECT BANNER,' 'xyz' 
+FROM V$VERSION.`
+
+Since `UNION` is a combination, the data of both `SELECT` sentences will be displayed.
+
+
+
