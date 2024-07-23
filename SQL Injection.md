@@ -16,11 +16,11 @@ SQL injection attacks have been used in many high-profile data breaches over the
 
 # Some cases of SQL injection
 
-1. SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+## 1. SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 
 When the user selects the Gifts section, the query will be:
 
-SELECT* FROM products WHERE category='Gifts' AND released=1
+### SELECT* FROM products WHERE category='Gifts' AND released=1
 
 Implement insert 'or 1=1 -- then the question will be
 
@@ -28,4 +28,4 @@ SELECT* FROM products WHERE category='Gifts' or 1=1 -- AND released =
 
 Then, SELECT will select all the information from products table.
 
-2. SQL injection vulnerability allowing login bypass
+## 2. SQL injection vulnerability allowing login bypass
