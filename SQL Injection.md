@@ -22,10 +22,10 @@ When the user selects the Gifts section, the query will be:
 
 `SELECT* FROM products WHERE category='Gifts' AND released=1`
 
-Implement insert 'or 1=1 -- then the question will be
+Implement insert `'or 1=1 --` then the question will be
 
-SELECT* FROM products WHERE category='Gifts' or 1=1 -- AND released =
+`SELECT* FROM products WHERE category='Gifts' or 1=1 -- AND released =`
 
-Then, SELECT will select all the information from products table.
+Then, `SELECT` will select all the information from products table.
 
 ## 2. SQL injection vulnerability allowing login bypass
