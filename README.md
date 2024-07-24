@@ -23,4 +23,4 @@ In this session, the following will be included:
 
 - Authentication
 
-Each topic includes lab environment, the definition and related labs.
+Each topic includes lab environment, the definition and related labs. All of them are done on Kali Linux's Burp Suite application.
