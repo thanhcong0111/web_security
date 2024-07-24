@@ -1,5 +1,5 @@
 # web_security
-Exploit vulnerability labs at portswigger.net. For more information, you can click on the following link:
+Exploit vulnerability labs at portswigger.net. To understand more, you can click on the following link:
 
 - [View all labs at portswigger.net](https://portswigger.net/web-security)
 
@@ -24,3 +24,7 @@ In this session, the following will be included:
 - Authentication
 
 Each topic includes lab environment, the definition and related labs. All of them are done on Kali Linux's Burp Suite application.
+
+Thanks for Ngu Duy Tinh - a companion who accompanied me to complete the assignments. 
+
+For more information, you can read the report was attached to have more perspective about the method, processes of attack, images, and forth. 
