@@ -23,4 +23,4 @@ In this session, the following will be included:
 
 - Authentication
 
-Each topic includes the definition and related labs.
+Each topic includes the definition, lab environment and related labs.
