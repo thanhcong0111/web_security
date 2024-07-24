@@ -1,4 +1,4 @@
-# web_security
+# Web security
 Exploit vulnerability labs at portswigger.net. To understand more, you can click on the following link:
 
 - [View all labs at portswigger.net](https://portswigger.net/web-security)
