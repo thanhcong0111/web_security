@@ -27,4 +27,4 @@ Each topic includes lab environment, the definition and related labs. All of the
 
 Thanks to Ngu Duy Tinh, a companion who accompanied me to complete the assignments.
 
-For more information, you can read the attached report to gain more perspective about the method, processes of attack, images, and so forth.
+For more information, you can read the attached report (Vietnamese version) to gain more perspective about the method, processes of attack, images, and so forth.
