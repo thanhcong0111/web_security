@@ -33,5 +33,6 @@ For more information, you can read the attached report (Vietnamese version) to g
 
 My learning progress:
 
-![image](https://github.com/user-attachments/assets/36e0fbbc-87d2-467f-9022-9a5af0e19b33)
+![image](https://github.com/user-attachments/assets/78f90fc2-62c5-4ff4-bd25-275fc231d795)
+
 
