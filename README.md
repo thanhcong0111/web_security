@@ -19,6 +19,8 @@ In this session, the following will be included:
 
 - Server-side request forgery (SSRF)
 
+- HTTP request smuggling
+
 - Path traversal
 
 - Access control vulnerabilities
