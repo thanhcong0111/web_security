@@ -11,7 +11,7 @@ In this session, the following will be included:
 
 - Cross-site scripting
 
-- Clickjacking
+- Clickjacking (5/5 labs was completed)
 
 - Cross-origin resource sharing (CORS) (3/3 labs was completed)
 
