@@ -39,7 +39,7 @@ For more information, you can read the attached report (Vietnamese version) to g
 
 My learning progress:
 
-![image](https://github.com/user-attachments/assets/6491dc6b-95c8-4d89-b478-1e2a9992c527)
+![image](https://github.com/user-attachments/assets/ba3c9a04-1722-4459-a35c-190bc15dff29)
 
 
 
