@@ -9,7 +9,7 @@ In this session, the following will be included:
 
 - SQL injection (16/18 labs was completed)
 
-- Cross-site scripting
+- Cross-site scripting (13/30 labs was completed)
 
 - Clickjacking (5/5 labs was completed)
 
