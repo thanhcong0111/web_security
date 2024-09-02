@@ -21,11 +21,15 @@ In this session, the following will be included:
 
 - HTTP request smuggling
 
+- OS command injection (3/5 labs was completed)
+
 - Path traversal (6/6 labs was completed)
 
 - Access control vulnerabilities (13/13 labs was completed)
 
 - Authentication
+
+Labs must using Burp Collaborator's default public server can be not completed.
 
 Each topic includes lab environment, the definition and related labs. All of them are done on Kali Linux's Burp Suite application.
 
