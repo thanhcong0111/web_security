@@ -21,7 +21,7 @@ In this session, the following will be included:
 
 - HTTP request smuggling
 
-- Path traversal
+- Path traversal (6/6 labs was completed)
 
 - Access control vulnerabilities (13/13 labs was completed)
 
