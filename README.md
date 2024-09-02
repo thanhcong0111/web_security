@@ -7,23 +7,23 @@ Exploit vulnerability labs at portswigger.net. To understand more, you can click
 
 In this session, the following will be included:
 
-- SQL injection
+- SQL injection (16/18 labs was completed)
 
 - Cross-site scripting
 
 - Clickjacking
 
-- Cross-origin resource sharing (CORS)
+- Cross-origin resource sharing (CORS) (3/3 labs was completed)
 
 - XML external entity (XXE) injection
 
-- Server-side request forgery (SSRF)
+- Server-side request forgery (SSRF) (5/7 labs was completed)
 
 - HTTP request smuggling
 
 - Path traversal
 
-- Access control vulnerabilities
+- Access control vulnerabilities (13/13 labs was completed)
 
 - Authentication
 
